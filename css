@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>E-Vehicle Icon</title>
+<style>
+  .ev-icon {
+    width: 100px;
+    height: 60px;
+    position: relative;
+    background-color: #4CAF50;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .ev-icon:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    border-radius: 50%;
+  }
+  
+  .ev-icon:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    transform: translateY(-50%);
+    width: 5px;
+    height: 20px;
+    background-color: #fff;
+  }
+</style>
+</head>
+<body>
+  <div class="ev-icon"></div>
+</body>
+</html>
